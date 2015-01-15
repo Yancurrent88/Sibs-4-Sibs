@@ -515,7 +515,6 @@ Formatting UNDER 780px - MOBILE/IPAD
 ***************************/
 
 @media only screen and (max-width: 780px) {
-/*
 
 article {
  background-color: #9BABB6; 
@@ -524,7 +523,6 @@ article {
     height: 100%;
     
 }
-*/
     section p {
      font-size: 2.5rem;   
     }
