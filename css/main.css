@@ -1,0 +1,612 @@
+* {
+    box-sizing: border-box;
+/*
+     border-style: solid;
+    border-width: 5px;
+    border-color: red;
+*/
+}
+
+html {
+
+background: url(../images/background-image.png) no-repeat center center fixed;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+font-size: 1.2em; 
+line-height: 1.5em;
+font-family: 'PT Sans', sans-serif;
+box-sizing: border-box;
+color: black;
+}
+    
+
+
+/***************************
+****************************
+Classes and ID's 
+****************************
+***************************/
+/*
+article {
+ background-color: #44678D; 
+         border-style: solid;
+    
+}
+*/
+ 
+#direction {
+        width: 70px;
+    height: 70px;
+margin-right: auto;
+    margin-left: auto;
+margin-bottom: 25px;
+    }
+.contacticon {
+        width: 100px;
+    height: 100px;
+margin-right: auto;
+    margin-left: auto;
+    }
+
+#email {
+    margin-top: -30px;
+}
+
+#facebook {
+    margin-top: -6px;
+}
+
+#mapalign {
+       width: 420px;
+    height: 315px;
+    background: black;
+    margin: 0 auto;
+}
+
+.logo-bottom {
+     font-size: .5em;
+font-family: 'Pompiere', cursive;
+    margin-top: -15px;
+   color: #44678D;  
+}
+
+#map {
+    
+margin-left: auto;
+    margin-right: auto;  
+}
+
+.main-nav {
+   width: 100%;
+    display: block;
+    text-align: center;
+    opacity: .8;
+background-color: #F9FDFF;
+
+}
+
+.main-nav li {
+    padding: 10px;
+   font-weight: normal;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #44678D;    
+}
+
+.main-logo {
+      font-family: 'hanged-letters';
+    src: url('../images/hanged-letters.ttf');
+      font-weight: normal;
+    font-style: normal;
+    margin-bottom: 0;  
+}
+
+.main-logo a {
+  color: #44678D; 
+    font-size: 2em;
+    text-shadow: -2px -1px 5px rgba(144, 146, 144, 1);
+}
+
+.main-nav li {
+        color: #44678D;   
+    font-family: 'Pompiere', cursive;
+   
+    }
+
+.main-nav li:first-child {
+    padding-top: 29px;
+}
+
+
+.main-heading h2, .main-break1 h2 {
+    background: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;  
+font-family: 'Dosis', sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.8; 
+     color: #F9FDFF;
+    text-shadow: 0 1px 0 #44678D; 
+        
+}
+
+.main-break1 {
+    margin-top: -10px;
+    letter-spacing: .9rem;
+    height: 100%;
+/*    background-color: #44678D;*/
+}
+
+.main-footer {
+    background: #F9FDFF;
+    text-align: center;
+    font-size: .7rem;
+    box-shadow: 0px 0px 5px #333333; 
+    -webkit-box-shadow: 0px 0px 5px #333333; 
+    -moz-box-shadow: 0px 0px 5px #333333; 
+}
+    
+.main-quote {
+    font-style: italic;
+    font-size: 1rem;
+/*    margin: 1em 5px;*/
+    margin: 0 auto;
+    padding: 1em 0px;
+    width: 300px
+}
+
+.section {
+    padding: 6px;
+    background: #F3F8FF;
+    opacity: .9;
+         
+}
+
+.section h3 {
+    color: #44678D;
+    font-family: 'Pompiere', cursive;
+}
+
+/***************************
+****************************
+Blockquote Styling and Quote Image
+****************************
+***************************/
+.quoteimage1 {
+        height: 300px;
+        width: 300px;
+        border-radius: 5%;
+        margin: 0 auto;
+   border:2px solid #44678D;
+
+    }
+
+.open:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 6em;
+  line-height: 0.1em;
+  margin-right: 0.35em;
+  vertical-align: -0.4em;
+}
+.close:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 2em;
+  line-height: 0.1em;
+  margin-right: 0.35em;
+  vertical-align: -0.4em;
+}
+
+/***************************
+****************************
+Type, Images, Link Styling
+****************************
+***************************/
+
+@font-face {
+    font-family: 'hanged-letters';
+    
+  src: url('../images/hanged-letters.ttf')
+}
+
+#kyleimage {
+     background-image: url(../images/kyleimage.jpg); 
+    background-position: center;       
+    background-size: cover;
+    max-height: 100%;
+    }
+
+#ariellaimage {
+     background-image: url(../images/ariella%20image.jpg); 
+    background-position: center;       
+    background-size: cover; 
+    }
+
+p a {
+      color: #44678D;
+    text-decoration: none;
+    font-weight: 7 00;
+   
+}
+
+a {
+    text-decoration: none;
+    color: #44678D;
+}
+
+
+a:hover, a.img:hover, .phone {
+    color: #A1635E;
+    	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+svg:hover .phone
+
+{
+    fill: #A1635E; }
+
+
+/*
+.italics {
+ font-style: italic; 
+}
+*/
+
+section p {
+margin: 0 auto;
+    text-align: center;
+    color: #44678D;
+    font-family: 'Pompiere', cursive;
+}
+
+
+/***************************
+****************************
+Formatting over 781px width DESKTOP, Alphabetical order
+****************************
+***************************/
+@media only screen and (min-width: 781px) {
+    
+    
+body p {
+font-size: .8em; 
+line-height: 1.8em;
+}
+
+    
+.center {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 1.5em;
+    line-height: 1.7em;
+    border-radius: 20px;
+    padding: 60px;
+    
+}
+    
+    #contact {
+        margin-top: 100px;
+    }
+   
+.logo-bottom {
+    font-size: 1.3rem; 
+    margin-top: -16px;
+/*    visibility: visible;*/
+} 
+.main-nav {
+   display: -webkit-flex;
+   display: flex;
+   align-items: center;
+   -webkit-align-self: center;
+   width: 100%;
+   position: fixed;
+   height: 99px;
+   opacity: inherit;
+   background-color: transparent;
+       -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+ }
+.main-nav li {
+    align-self: center;
+    -webkit-align-self: center;
+    -webkit-align-self: center;
+    padding-right: 15px; 
+    font-size: 1.5em;
+    visibility: hidden;
+    -webkit-transition: all 10s ease;
+	-moz-transition: all 10s ease;
+	-o-transition: all 10s ease;
+	transition: all 10s ease;
+    }
+    
+.main-nav li:first-child {
+    margin-right: auto;
+    padding-left: 15px;
+    padding-top: 8px;
+ } 
+    
+.main-logo a {
+    font-size: 3.5rem;
+/*    visibility: visible;*/
+}
+
+      
+ .main-heading {
+     padding-top: 100px;
+     padding-bottom: 125px;
+ }
+
+        
+.main-heading h2, .main-break1 h2
+    {
+    background: none;
+    font-weight: 700;
+    font-size: 5em;
+    line-height: 1.7;
+    letter-spacing: .7rem; 
+}
+    
+    .main-quote {
+     line-height: 2.2em;   
+    }
+
+.quoteimage1 {
+        margin-top: 50px;
+        margin-bottom: 50px}
+}
+
+section p {
+ font-size: 2em;
+    color: 
+}
+
+
+ul.revise   {
+    background-color: #F9FDFF;
+    z-index: 99;
+    box-shadow: 0px 0px 5px #333333; 
+    -webkit-box-shadow: 0px 0px 5px #333333; 
+    -moz-box-shadow: 0px 0px 5px #333333; 
+ }
+
+.revise li {
+    visibility: visible;
+}
+
+/***************************
+****************************
+Desktop Animation
+****************************
+***************************/
+
+.floating {
+	animation-name: floating;
+	-webkit-animation-name: floating;
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+    
+@keyframes floating {
+	0% {
+		transform: translateY(0%);	
+	}
+	50% {
+		transform: translateY(8%);	
+	}	
+	100% {
+		transform: translateY(0%);
+	}			
+}
+    
+@-webkit-keyframes floating {
+	0% {
+		-webkit-transform: translateY(0%);	
+	}
+	50% {
+		-webkit-transform: translateY(8%);	
+	}	
+	100% {
+		-webkit-transform: translateY(0%);
+	}			
+}
+
+
+.pullUp{
+	animation-name: pullUp;
+	-webkit-animation-name: pullUp;	
+
+	animation-duration: 2.1s;	
+	-webkit-animation-duration: 2.1s;
+
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease-out;	
+
+	transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%; 		
+}
+
+@keyframes pullUp {
+	0% {
+		transform: scaleY(0.1);
+	}
+	40% {
+		transform: scaleY(1.02);
+	}
+	60% {
+		transform: scaleY(0.98);
+	}
+	80% {
+		transform: scaleY(1.01);
+	}
+	100% {
+		transform: scaleY(0.98);
+	}				
+	80% {
+		transform: scaleY(1.01);
+	}
+	100% {
+		transform: scaleY(1);
+	}							
+}
+
+@-webkit-keyframes pullUp {
+	0% {
+		-webkit-transform: scaleY(0.1);
+	}
+	40% {
+		-webkit-transform: scaleY(1.02);
+	}
+	60% {
+		-webkit-transform: scaleY(0.98);
+	}
+	80% {
+		-webkit-transform: scaleY(1.01);
+	}
+	100% {
+		-webkit-transform: scaleY(0.98);
+	}				
+	80% {
+		-webkit-transform: scaleY(1.01);
+	}
+	100% {
+		-webkit-transform: scaleY(1);
+	}		
+}
+
+.Flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.Flexible-container iframe,   
+.Flexible-container object,  
+.Flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/***************************
+****************************
+Formatting UNDER 780px - MOBILE/IPAD
+****************************
+***************************/
+
+@media only screen and (max-width: 780px) {
+
+article {
+ background-color: #9BABB6; 
+         border-style: solid;
+    border-color: #FFFCFA;
+    height: 100%;
+    
+}
+    section p {
+     font-size: 2.5rem;   
+    }
+    
+    #mapalign {
+       width: 378px;
+    height: 31.5px;
+    background: black;
+    margin: 0 auto;
+}
+    
+    .Flexible-container {
+    margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    
+.contacticon {
+        width: 70px;
+    height: 70px;
+    }
+
+#email {
+    margin-top: -5px;
+}
+
+#facebook {
+    margin-top: 10px;
+}
+    
+    #direction {
+        width: 45px;
+    height: 45px;
+    }
+    
+ .main-heading h2, .main-break1 h2 { 
+font-family: 'Pompiere', cursive;
+ }
+    
+}
+/***************************
+****************************
+Formatting over 650px - Blockquote/columns
+****************************
+***************************/
+
+@media only screen and (min-width: 650px) {
+    
+#quote-container {
+     display: -webkit-flex;
+  display: flex;
+    width: 100%;
+}
+
+#quote1, #quote2 { 
+    width:50%;
+}   
+}
+
+/***************************
+****************************
+Smaller Mobile Devices - Under 453pxw
+****************************
+***************************/
+
+@media only screen and (max-width: 453px) {
+    
+ .main-logo a {
+   font-size: 1.3em;  
+ } 
+
+.main-nav li:first-child {
+    padding-top: 8px;
+}
+
+.logo-bottom {
+     font-size: .4em; 
+    margin-top: -20px;
+}
+    
+.quoteimage1 {
+        height: 200px;
+        width: 200px;
+        border-radius: 20%;
+        margin: 0 auto;     
+    }  
+}
