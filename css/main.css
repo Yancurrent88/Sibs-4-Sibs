@@ -245,7 +245,7 @@ a {
 
 
 a:hover, a.img:hover, .phone {
-    color: #A1635E;
+    color: #D6916E;
     	-webkit-transition: all .4s ease-in-out;
 	-moz-transition: all .4s ease-in-out;
 	-o-transition: all .4s ease-in-out;
@@ -255,7 +255,7 @@ a:hover, a.img:hover, .phone {
 svg:hover .phone
 
 {
-    fill: #A1635E; }
+    fill: #D6916E; }
 
 
 /*
@@ -325,10 +325,10 @@ line-height: 1.8em;
     padding-right: 15px; 
     font-size: 1.5em;
     visibility: hidden;
-    -webkit-transition: all 10s ease;
-	-moz-transition: all 10s ease;
-	-o-transition: all 10s ease;
-	transition: all 10s ease;
+    -webkit-transition: all 3.2s ease;
+	-moz-transition: all 3.2s ease;
+	-o-transition: all 3.2s ease;
+	transition: all 3.2s ease;
     }
     
 .main-nav li:first-child {
@@ -347,7 +347,9 @@ line-height: 1.8em;
      padding-top: 100px;
      padding-bottom: 125px;
      background-color: #44678D;
-     opacity: .7
+     opacity: .7;
+      z-index: 103;
+     height: 100vh;
  }
     
 article.sticky {
@@ -357,6 +359,7 @@ article.sticky {
 	-moz-transition: all 3.2s ease;
 	-o-transition: all 3.2s ease;
 	transition: all 3.2s ease;
+   
     }
 
         
@@ -528,7 +531,7 @@ Formatting UNDER 780px - MOBILE/IPAD
 @media only screen and (max-width: 780px) {
 
 article {
- background-color: #9BABB6; 
+ background-color: #B7CDD9; 
          border-style: solid;
     border-color: #FFFCFA;
     height: 100%;
