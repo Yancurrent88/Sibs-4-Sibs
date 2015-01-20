@@ -303,7 +303,6 @@ line-height: 1.8em;
 .logo-bottom {
     font-size: 1.3rem; 
     margin-top: -16px;
-/*    visibility: visible;*/
 } 
 .main-nav {
    display: -webkit-flex;
@@ -317,6 +316,7 @@ line-height: 1.8em;
    background-color: transparent;
        -webkit-transition: all 1.5s ease;
     transition: all 1.5s ease;
+    z-index: 200;
  }
 .main-nav li {
     align-self: center;
@@ -324,11 +324,6 @@ line-height: 1.8em;
     -webkit-align-self: center;
     padding-right: 15px; 
     font-size: 1.5em;
-    visibility: hidden;
-    -webkit-transition: all 3.2s ease;
-	-moz-transition: all 3.2s ease;
-	-o-transition: all 3.2s ease;
-	transition: all 3.2s ease;
     }
     
 .main-nav li:first-child {
@@ -339,7 +334,6 @@ line-height: 1.8em;
     
 .main-logo a {
     font-size: 3.5rem;
-/*    visibility: visible;*/
 }
 
       
@@ -389,7 +383,7 @@ section p {
 
 ul.revise   {
     background-color: #F9FDFF;
-    z-index: 99;
+/*    z-index: 99;*/
     box-shadow: 0px 0px 5px #333333; 
     -webkit-box-shadow: 0px 0px 5px #333333; 
     -moz-box-shadow: 0px 0px 5px #333333; 
@@ -529,6 +523,10 @@ Formatting UNDER 780px - MOBILE/IPAD
 ***************************/
 
 @media only screen and (max-width: 780px) {
+    
+    html {
+     background: none;   
+    }
 
 article {
  background-color: #B7CDD9; 
